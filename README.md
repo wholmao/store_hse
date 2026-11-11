@@ -26,7 +26,7 @@ erDiagram
 
 - fct_orders: distributed_by='order_id'. Большой факт, распределяется по ключу соединения
 - fct_order_items: distributed_by='order_id'. Большой факт, распределяется по ключу
-- dim_products: distributed_by='product_id'. Не уверен, но больше похож на большой факт
+- dim_products: distributed_by='product_id'. Больше похож на большой факт
 - dim_customers: distributed_replicated=true. Небольшой справочник
 - dim_dates: distributed_replicated=true. Небольшой справочник
 
