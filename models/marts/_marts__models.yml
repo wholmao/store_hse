@@ -38,7 +38,7 @@ models:
         description: "Сумма заказа в рублях после скидок."
         data_tests: [non_negative]
       - name: paid_amount
-        description: '{{ doc("113") }}'
+        description: '{{ doc("double_pay") }}'
       - name: refunded_amount
         description: "Сумма возвратов положительным числом; 0, если возвратов нет."
       - name: net_paid_amount
