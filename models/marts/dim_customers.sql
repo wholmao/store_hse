@@ -28,7 +28,7 @@ first_order as (
             order_id,
             order_date,
             row_number() over (partition by customer_id order by order_date asc, order_id asc) as rn
-        from confirmed
+        from confirm
     ) num
     where rn = 1
 ),
