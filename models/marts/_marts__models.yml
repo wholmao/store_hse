@@ -48,7 +48,7 @@ models:
       - name: first_paid_at
         description: "Время первой успешной оплаты; пусто, если оплат нет."
       - name: is_confirmed
-        description: '{{ doc("confirmed") }}'
+        description: '{{ doc("confirmed_order") }}'
         data_tests: [not_null]
       - name: items_count
         description: "Число разных товаров в заказе"
@@ -95,7 +95,7 @@ models:
         description: "Сумма позиции после скидки"
         data_tests: [non_negative]
       - name: is_confirmed
-        description: '{{ doc("confirmed") }}'
+        description: '{{ doc("confirmed_order") }}'
 
   - name: dim_customers
     description: "Измерение клиентов: одна строка - один клиент"
